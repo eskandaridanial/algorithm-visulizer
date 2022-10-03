@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+html , body {
+    height: 100%;
+    background-image: linear-gradient(#6BB6BC,#9DC6CA);
+}
+html {
+    display: table;
+    margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    display: table-cell;
+    vertical-align: middle;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+    text-align: center;
+    font-family: monospace;
+    font-weight: lighter;
+    font-size: 30px;
+    color: #00426F;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+    width: 800px;
+    height: 350px;
+    margin: auto;
+    padding: -0.5px 30px;
+    border-radius: 30px;
+    border: #077B88 10px solid;
+    background: #E2CCC6;
 }
 
-.App-link {
-  color: #61dafb;
+.options {
+    margin: 20px;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.options button {
+    text-align: center;
+    font-family: monospace;
+    font-weight: lighter;
+    font-size: 10px;
+    color: #00426f;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 5px;
+    border: #077B88 2px solid;
+    background-color: #E2CCC6;
+}
+
+.options button:hover {
+    background-color: #00426F;
+    color: #E2CCC6;
+
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #00426F;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #00426F;
+    cursor: pointer;
 }
